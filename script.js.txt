@@ -1,0 +1,17 @@
+// Seleciona o formulário e o elemento de mensagem
+const form = document.getElementById('candidaturaForm');
+const mensagem = document.getElementById('mensagem');
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault(); // Evita que a página recarregue
+
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const telefone = document.getElementById('telefone').value;
+
+    // Aqui podemos adicionar lógica para salvar ou enviar os dados
+    mensagem.textContent = `Candidatura de ${nome} enviada com sucesso!`;
+
+    // Limpar o formulário
+    form.reset();
+});

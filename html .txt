@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Escola de Negócios Cambas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>THE BUSINESS SCHOOL CAMBAS</h1>
+        <p>Site de concurso de empreendedores</p>
+    </header>
+
+    <main>
+        <form id="candidaturaForm">
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone">
+
+            <button type="submit">Enviar Candidatura</button>
+        </form>
+        <div id="mensagem"></div>
+    </main>
+
+    <footer>
+        <p>© 2026 Escola de Negócios Cambas</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
